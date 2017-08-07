@@ -4,7 +4,6 @@ import (
 	"net/url"
 	"net/http"
 	"log"
-	//"io/ioutil"
 	"io/ioutil"
 )
 
