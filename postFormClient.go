@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"net/url"
 	"log"
+	"./pack"
 )
 
 func main() {
@@ -11,8 +12,6 @@ func main() {
 		"query":{"helloworld"},
 	}
 	res,err:=http.PostForm("http://localhost:18888",values)
-	if err != nil{
-		panic(err)
-	}
+	pack.ErrHandler(err)
 	log.Println(res.Status)
 }
