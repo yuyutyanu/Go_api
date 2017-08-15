@@ -13,3 +13,4 @@ func main() {
 	log.Println("Header: " ,res.Header)
 	log.Println("Body: ",res.Body)//空
 }
+
